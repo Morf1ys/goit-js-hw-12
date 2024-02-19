@@ -1,0 +1,36 @@
+.loader-container {
+    text-align: center;
+}
+.loader {
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 50%;
+    border-top: 0.25rem solid rgb(238, 139, 10);
+    border-right: 0.25rem solid transparent;
+    animation: rotation 1s linear infinite;
+    margin: 0 auto;
+   
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 50%;
+    border-left: 0.25rem solid rgb(139, 138, 206);
+    border-bottom: 0.25rem solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

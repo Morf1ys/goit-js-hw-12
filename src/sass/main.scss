@@ -1,0 +1,60 @@
+ul{
+    list-style: none;
+}
+.container {
+    position: fixed;
+    /* або 'absolute', залежно від ваших потреб */
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* колір фону, можна змінити на потрібний */
+    padding: 10px;
+    /* опціонально, для встановлення відступів */
+  
+    /* опціонально, для тіні */
+    z-index: 999;
+    
+    /* опціонально, для визначення позиції над іншими елементами */
+}
+.search-form {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    margin-bottom: 32px;
+}
+
+.search-form-input {
+    
+    width: 272px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    color: #808080;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-form-input:hover {
+    border-color: #000000;
+}
+
+.search-form-input:focus {
+    border-color: #4e75ff;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.search-form-button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4e75ff;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
